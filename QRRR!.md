@@ -101,4 +101,59 @@ FlagY{Congrats_u_got_ittt}
 ```
 
 #### Conclusion:
-By writing a Python script to decode the QR codes and applying a ROT cipher decryption, I was able to successfully extract the flag. This challenge was worth **50 points**, and the correct flag was **FlagY{Congrats_u_got_ittt}**.
+By writing a Python script to decode the QR codes and applying a ROT cipher decryption, I was able to successfully extract the flag. The complete Python script used for decoding and deduplication is as follows:
+
+```python
+from PIL import Image
+from pyzbar.pyzbar import decode
+import codecs  # Importing the codecs module for ROT13 decoding
+
+# Path to the GIF file
+gif_path = 'QRRR!.gif'
+
+# Load the GIF image
+gif_image = Image.open(gif_path)
+
+# List to store all decoded results from the frames
+decoded_results = []
+
+# Iterate over each frame of the GIF
+def decode_gif_qr(gif_image):
+    for frame in range(0, gif_image.n_frames):
+        gif_image.seek(frame)  # Go to the specific frame
+        frame_image = gif_image.convert('RGB')  # Convert to RGB format
+        decoded_objects = decode(frame_image)
+        
+        if decoded_objects:
+            decoded_data = decoded_objects[0].data.decode('utf-8')
+            decoded_results.append((frame, decoded_data))
+
+    if not decoded_results:
+        print("No QR code detected in any frames.")
+    else:
+        print(f"\nDecoded {len(decoded_results)} frames with QR codes.")
+        print_output()
+
+def print_output():
+    # Deduplicate and sort the results
+    unique_results = {}
+    for frame, data in decoded_results:
+        # Store unique original data
+        if data not in unique_results:
+            unique_results[data] = frame
+
+    # Print the results in a cleaner format
+    print("\nDecoded QR Data (Original and ROT13):")
+    for data, frame in unique_results.items():
+        rot13_data = decode_rot13(data)
+        print(f"Frame {frame} - Original: {data} - ROT13: {rot13_data}")
+
+def decode_rot13(data):
+    # Use codecs.encode to apply ROT13 cipher
+    return codecs.encode(data, 'rot_13')
+
+# Run the QR decoding on the GIF
+decode_gif_qr(gif_image)
+```
+
+This challenge was worth **50 points**, and the correct flag was **FlagY{Congrats_u_got_ittt}**.
