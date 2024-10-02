@@ -20,7 +20,9 @@ The repository contains writeups for the following CTF challenges:
 
 - Challenge 1: QRRR!  
 - Challenge 2: Matryoksha Doll
-- Challenge 3: OhMyPatch 
+- Challenge 3: OhMyPatch
+- Challenge 4: Meters Flag
+- Challenge 5: Feedback 
 
 ## How to Use
 
