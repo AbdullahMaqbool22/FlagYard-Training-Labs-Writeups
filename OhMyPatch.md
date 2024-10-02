@@ -41,7 +41,7 @@ In this challenge, the goal is to exploit a web application by escalating privil
 - **JSON Patch**: Used to modify the role of users.
 
 ## Code
-
+**Here it is an automated script that do all the work for you by me :)**
 ```python
 import requests
 import json
