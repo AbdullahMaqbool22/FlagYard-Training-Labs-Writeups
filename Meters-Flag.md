@@ -1,4 +1,4 @@
-#"MeterFlag" Challenge (80 Points)
+# Meters Flag Challenge (80 Points)
 
 ## Challenge Overview
 
