@@ -19,7 +19,8 @@ FlagYard is a platform dedicated to hosting CTF challenges where security enthus
 The repository contains writeups for the following CTF challenges:
 
 - Challenge 1: QRRR!  
-- Challenge 2: Matryoksha Doll  
+- Challenge 2: Matryoksha Doll
+- Challenge 3: OhMyPatch 
 
 ## How to Use
 
