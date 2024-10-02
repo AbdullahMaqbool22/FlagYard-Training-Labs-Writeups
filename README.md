@@ -1,4 +1,4 @@
-# FlagYard Writeups
+# FlagYard Training Labs Writeups
 
 Welcome to the **FlagYard Writeups** repository! This repository is a collection of detailed writeups for various Capture the Flag (CTF) challenges. Each writeup includes a step-by-step explanation of the methodology, tools used, and insights gained during the process of solving each challenge.
 
