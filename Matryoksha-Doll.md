@@ -18,7 +18,7 @@ The primary objective was to find a specific flag embedded within the MKV files,
    I carefully observed the playback of each file, looking for any anomalies or distinct content. The files were played in quick succession, maintaining focus on the visuals and audio to catch any subtle hints that could point to the flag.
 
 4. **Discovery of the Flag:**
-   Upon reaching **Matryoksha(9).mkv**, I noticed something unusual at the **24-second mark**. A text appeared on the screen, which turned out to be the flag. The flag read: **FlagY{my_font_amazing_isnt_it}**. This moment was thrilling as it was the culmination of careful observation and analysis of the video content.
+   Upon reaching **Matryoksha(9).mkv**, I noticed something unusual at the **24-second mark**. A text appeared on the screen, which turned out to be the flag. The flag read: **FlagY{redacted}**. This moment was thrilling as it was the culmination of careful observation and analysis of the video content.
 
 **Conclusion:**
 The Matryoksha Doll challenge was not just about retrieving a flag; it involved utilizing multimedia tools and honing observational skills. By effectively leveraging VLC media player's features, I was able to discover the flag hidden in the MKV files. This experience reinforced the importance of patience and attention to detail in cybersecurity challenges, particularly those involving digital media.
