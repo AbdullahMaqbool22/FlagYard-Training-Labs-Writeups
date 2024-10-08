@@ -81,7 +81,7 @@ FlagY{dfgdgfdgirjer_disdpf_dfdf!}
 FlagY{skjdkjs_dsod_dsfjsdfs!}
 FlagY{iisdfsd_kdsjksd_djsds!}
 FlagY{jhkdlfsdla_sdposdpds_5678765dddd!}
-**FlagY{Congrats_u_got_ittt}**
+**FlagY{Redacted}**
 FlagY{apskodpaksd_idsajdf56!}
 FlagY{dsfghtgfgfdse_ff!}
 FlagY{not_the_flag_wallah!}
@@ -97,7 +97,7 @@ FlagY{odsp2gdsdfsd!}
 #### Step 4: Identifying the Flag
 From the decrypted data, the correct flag was identified as:
 ```
-FlagY{Congrats_u_got_ittt}
+FlagY{Redacted}
 ```
 
 #### Conclusion:
@@ -156,4 +156,4 @@ def decode_rot13(data):
 decode_gif_qr(gif_image)
 ```
 
-This challenge was worth **50 points**, and the correct flag was **FlagY{Congrats_u_got_ittt}**.
+This challenge was worth **50 points**, and the correct flag was **FlagY{Redacted}**.
